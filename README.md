@@ -7,3 +7,7 @@ This repository contains a machine learning-based web application that predicts 
 3. Data visualization & exploratory analysis included
 4. Preprocessing pipeline to transform user inputs
 5. Live Deployment on Streamlit Cloud
+
+
+## App
+[Click here to access the deployed app](https://bank-churn-prediction-model.streamlit.app/)
