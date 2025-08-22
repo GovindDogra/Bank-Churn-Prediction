@@ -3,10 +3,11 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn.compose import ColumnTransformer
+import joblib
 
 # reading pickle models from pickle files
-model_churn = pickle.load(open('model_churn.pkl','rb'))
-col_transform = pickle.load(open('transformer_churn.pkl','rb'))
+model_churn = joblib.load("model_churn_.pkl")
+col_transform = joblib.load("transformer_churn_.pkl")
 
 # title of app
 st.title("Customer Churn Prediction for the Bank")
@@ -49,4 +50,5 @@ if st.button("Predict"):
         st.error("⚠️ Churn Alert: Customer is likely to leave.")
     else:
         st.success("✅ No Churn: Customer is likely to stay.")
+
 
